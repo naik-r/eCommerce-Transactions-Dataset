@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 
-customers_df = pd.read_csv('Customers.csv')
-products_df = pd.read_csv('Products.csv')
-transactions_df = pd.read_csv('Transactions.csv')
+customers_df = pd.read_csv('Rahulnaik_Ramavath_Customers.csv')
+products_df = pd.read_csv('Rahulnaik_Ramavath_Products.csv')
+transactions_df = pd.read_csv('Rahulnaik_Ramavath_Transactions.csv')
 
 customers_df['SignupDate'] = pd.to_datetime(customers_df['SignupDate'])
 transactions_df['TransactionDate'] = pd.to_datetime(transactions_df['TransactionDate'])
