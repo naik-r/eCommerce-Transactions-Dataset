@@ -3,9 +3,9 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
 
-customers_df = pd.read_csv('Customers.csv')
-products_df = pd.read_csv('Products.csv')
-transactions_df = pd.read_csv('Transactions.csv')
+customers_df = pd.read_csv('Rahulnaik_Ramavath_Customers.csv')
+products_df = pd.read_csv('Rahulnaik_Ramavath_Products.csv')
+transactions_df = pd.read_csv('Rahulnaik_Ramavath_Transactions.csv')
 
 customers_df['SignupDate'] = pd.to_datetime(customers_df['SignupDate'])
 transactions_df['TransactionDate'] = pd.to_datetime(transactions_df['TransactionDate'])
@@ -119,8 +119,8 @@ for result in results:
         })
 
 output_df = pd.DataFrame(formatted_results)
-output_df.to_csv('FirstName_LastName_Lookalike.csv', index=False)
-print("Results saved to FirstName_LastName_Lookalike.csv")
+output_df.to_csv('Rahulnaik_Ramavath_Lookalike.csv', index=False)
+print("Results saved to Rahulnaik_Ramavath_Lookalike.csv")
 
 print("\nFirst few results:")
 print(output_df.head())
