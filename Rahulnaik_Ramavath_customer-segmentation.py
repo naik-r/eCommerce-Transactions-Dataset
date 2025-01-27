@@ -12,8 +12,8 @@ sns.set_theme()
 sns.set_palette("husl")
 
 print("Loading datasets...")
-customers_df = pd.read_csv('Customers.csv')
-transactions_df = pd.read_csv('Transactions.csv')
+customers_df = pd.read_csv('Rahulnaik_Ramavath_Customers.csv')
+transactions_df = pd.read_csv('Rahulnaik_Ramavath_Transactions.csv')
 
 
 customers_df['SignupDate'] = pd.to_datetime(customers_df['SignupDate'])
@@ -193,7 +193,7 @@ results_df = pd.DataFrame({
     'Cluster': segmentation.features['Cluster']
 })
 
-output_filename = 'FirstName_LastName_Clustering.csv'
+output_filename = 'Rahulnaik_Ramavath_Clustering.csv'
 results_df.to_csv(output_filename, index=False)
 print(f"\nResults saved to {output_filename}")
 
